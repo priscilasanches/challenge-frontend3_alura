@@ -4,22 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>AluraGeek</title>
+
+    <link rel="icon" type="image/png" href="assets/img/controle.png">
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/components/header.css">
-    
-    
+    <link rel="stylesheet" href="assets/css/components/footer.css">
+        
 </head>
 <body>
     <header class="header">
-        <img src="assets/img/logo.png" alt="Logotipo da AluraGeek" class="header__logo">
-        <label for="search" class="hidden">Campo de busca</label>
+        <h1><img src="assets/img/logo.png" alt="AluraGeek" class="logo"></h1>
         <div class="header__search">
+            <label for="search" class="hidden">Campo de busca</label>
             <input type="text" class="header__search__input" id="search" placeholder="O que deseja encontrar?">
             <button class="header__search__submit"><img src="assets/img/search.svg"></button>
         </div>
         <button class="header__btn-login">Login</button>
     </header>
+    <footer class="footer">
+        <div class="footer__interactive">
+            <img src="assets/img/logo.png" alt="Logotipo da AluraGeek" class="logo">
+            <nav class="footer__nav">
+                <ul>
+                    <li class="footer__links"><a href="#">Quem somos nós</a></li>
+                    <li class="footer__links"><a href="#">Política de privacidade</a></li>
+                    <li class="footer__links"><a href="#">Programa Fidelidade</a></li>
+                    <li class="footer__links"><a href="#">Nossas lojas</a></li>
+                    <li class="footer__links"><a href="#">Quero ser franqueado</a></li>
+                    <li class="footer__links"><a href="#">Anuncie aqui</a></li>
+                </ul>
+            </nav>
+            <form class="footer__form">
+                <h4 class="footer__form__title">Fale conosco</h4>
+                <label for="name" class="footer__form__label">Nome</label>
+                <input type="text" class="footer__form__input footer__form__input--name" id="name">
+                <label for="msg" class="hidden">Escreva sua mensagem</label>
+                <textarea class="footer__form__input footer__form__input--msg" id="msg" placeholder="Escreva sua mensagem"></textarea>
+                <button type="submit" class="footer__form__btn">Enviar mensagem</button>
+            </form>
+        </div>
+        <div class="footer__info">
+            <p>Desenvolvido por Priscila Sanches</p>
+            <p>2022</p>
+        </div>
+    </footer>
     
 </body>
 </html>

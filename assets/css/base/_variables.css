@@ -5,7 +5,9 @@
 
     --color-text-input: #A2A2A2;
     --color-background-search: #F5F5F5;
-    --color-medium: #2A7AE4;
-    --color-light: #D4E4FA;
-
+    --color-white: #FCFCFC;
+    --color-100: #2A7AE4;
+    --color-80: #5595E9;
+    --color-20: #D4E4FA;
+    --color-10: #EAF2FD;
 }
