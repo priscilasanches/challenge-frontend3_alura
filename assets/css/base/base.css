@@ -1,0 +1,28 @@
+@import url("_reset.css");
+@import url("_variables.css");
+
+body {
+    background-color: #FCFCFC;
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+button {
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+
+input {
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--color-text-input);
+    border: none;
+}
+
+.hidden {
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    position: absolute;
+    width: 1px;
+}
