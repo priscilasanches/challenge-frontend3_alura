@@ -48,8 +48,7 @@
 .footer__form__btn {
     background-color: var(--color-100);
     color: var(--color-white);
-    padding: 1rem;
-    width: 10.31rem;
+    width: 10.33rem;
 }
 
 .footer__form__btn:hover {
@@ -75,10 +74,10 @@
         padding: 2rem 1rem;
     }
     .footer__interactive .logo {
-        grid-area: "logo";
+        grid-area: logo;
     }
     .footer__nav {
-        grid-area: "nav";
+        grid-area: nav;
     }
     .footer__form {
         grid-area: form;
@@ -87,7 +86,7 @@
 }
 
 /*mobile*/
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
     .footer__interactive {
         display: flex;
         flex-direction: column;
@@ -102,4 +101,3 @@
         margin-left: 0rem;
     }
 }
-

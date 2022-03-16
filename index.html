@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/components/header.css">
     <link rel="stylesheet" href="assets/css/components/footer.css">
+    <link rel="stylesheet" href="assets/css/components/banner.css">
         
 </head>
 <body>
@@ -19,10 +20,18 @@
         <div class="header__search">
             <label for="search" class="hidden">Campo de busca</label>
             <input type="text" class="header__search__input" id="search" placeholder="O que deseja encontrar?">
-            <button class="header__search__submit"><img src="assets/img/search.svg"></button>
+            <button class="header__search__submit"><img src="assets/img/search.svg" alt="Botão de busca"></button>
         </div>
         <button class="header__btn-login">Login</button>
     </header>
+    <main>
+        <section class="banner">
+            <h2 class="banner__title">Dezembro Promocional</h2>
+            <p class="banner__description">Produtos Selecionados com 33% de desconto</p>
+            <button class="banner__btn">Ver consoles</button>
+        </section>
+
+    </main>
     <footer class="footer">
         <div class="footer__interactive">
             <img src="assets/img/logo.png" alt="Logotipo da AluraGeek" class="logo">
@@ -37,7 +46,7 @@
                 </ul>
             </nav>
             <form class="footer__form">
-                <h4 class="footer__form__title">Fale conosco</h4>
+                <h3 class="footer__form__title">Fale conosco</h3>
                 <label for="name" class="footer__form__label">Nome</label>
                 <input type="text" class="footer__form__input footer__form__input--name" id="name">
                 <label for="msg" class="hidden">Escreva sua mensagem</label>
