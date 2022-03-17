@@ -1,0 +1,51 @@
+.products__theme {
+    padding: 4rem 6rem 0;
+}
+
+.products__theme__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__title {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.products__link {
+    color: var(--color-100);
+    font-weight: 700;
+}
+
+.products__link::after {
+    content: url('../../img/seta.svg');
+    margin-left: 0.75rem;
+}
+
+.products__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-between; 
+    margin-top: 1rem; 
+}
+
+.product {
+    font-weight: 700;
+    line-height: 1.5rem;
+    width: 15%;
+}
+
+.product__img {
+    width: 100%;
+}
+
+.product__title {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.product__link {
+    color: var(--color-100);
+}
