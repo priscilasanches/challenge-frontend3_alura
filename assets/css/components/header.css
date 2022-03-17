@@ -25,7 +25,7 @@
     border: none;
     left: calc(100% - 3rem);
     position: relative;
-    top: -80%;
+    top: -115%;
 }
 
 .header__search__submit img {
@@ -56,7 +56,6 @@
     }
     .header__btn-login {
         font-size: 0.875rem;
-        height: 2.5rem;
         width: 10.375rem;
     }
 }

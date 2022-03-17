@@ -26,3 +26,24 @@
 .banner__btn {
     background-color: var(--color-100);
 }
+
+.banner__btn:hover {
+    background-color: var(--color-80);
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+    .banner{
+        padding: 0 1rem 2rem;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 600px) {
+    .banner__title {
+        font-size: 1.375rem;
+    }
+    .banner__description {
+        font-size:0.875rem;
+    }
+}

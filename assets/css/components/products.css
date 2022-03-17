@@ -49,3 +49,26 @@
 .product__link {
     color: var(--color-100);
 }
+
+/* tablet */
+@media screen and (max-width: 811px) {
+    .products__theme {
+        padding: 4rem 1rem 0;
+    }
+    .products__title {
+        font-size: 1.375rem;
+    }
+    .product {
+        width: 23%;
+    }
+    .product:nth-child(5), .product:last-child {
+        display: none;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 425px) {
+    .product {
+        width: 46%;
+    }
+}
