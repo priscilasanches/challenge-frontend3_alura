@@ -3,9 +3,10 @@
 :root {
     --font-family: 'Raleway', sans-serif;
 
-    --color-text-input: #A2A2A2;
-    --color-background-search: #F5F5F5;
+    --color-dark-grey: #A2A2A2;
+    --color-grey: #F5F5F5;
     --color-white: #FCFCFC;
+    
     --color-100: #2A7AE4;
     --color-80: #5595E9;
     --color-20: #D4E4FA;

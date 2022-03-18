@@ -1,0 +1,33 @@
+.login {
+    background-color: var(--color-grey);
+    padding: 5.69rem 1rem;
+}
+
+.login__area {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.54rem;
+    margin: 0 auto;
+    width: 423px;
+}
+
+.login__title {
+    font-size: 1.125rem;
+}
+
+.login__input{
+    box-shadow: 0px 1px var(--color-dark-grey);
+    padding: 1.13rem 0.75rem;   
+    width: 100%; 
+}
+
+.btn--login {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .login__area{
+        width: 275px;
+    }
+}

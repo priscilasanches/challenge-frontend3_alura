@@ -8,10 +8,8 @@
     <title>AluraGeek</title>
 
     <link rel="icon" type="image/png" href="assets/img/controle.png">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/banner.css">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/components/banner.css">
     <link rel="stylesheet" href="assets/css/products.css">
         
 </head>
@@ -20,21 +18,21 @@
         <h1><a href="index.html"><img src="assets/img/logo.png" alt="AluraGeek" class="logo"></a></h1>
         <div class="header__search">
             <label for="search" class="hidden">Campo de busca</label>
-            <input type="text" class="header__search__input" id="search" placeholder="O que deseja encontrar?">
+            <input type="text" class="header__search__input" id="search" name="search" placeholder="O que deseja encontrar?">
             <button class="header__search__submit"><img src="assets/img/search.svg" alt="Botão de busca"></button>
         </div>
-        <button class="header__btn-login">Login</button>
+        <a href="login.html" class="btn btn--light btn--header">Login</a>
     </header>
     <main>
         <section class="banner">
-            <h2 class="banner__title">Dezembro Promocional</h2>
+            <h2 class="banner__title title">Dezembro Promocional</h2>
             <p class="banner__description">Produtos Selecionados com 33% de desconto</p>
-            <button class="banner__btn">Ver consoles</button>
+            <button class="btn btn--dark">Ver consoles</button>
         </section>
         <section class="products">
             <section class="products__theme">
                 <div class="products__theme__info">
-                    <h3 class="products__title">Star Wars</h3>
+                    <h3 class="products__title title">Star Wars</h3>
                     <a href="" class="products__link">Ver tudo</a>
                 </div>
                 <ul class="products__list">
@@ -180,12 +178,12 @@
                 </ul>
             </nav>
             <form class="footer__form">
-                <h3 class="footer__form__title">Fale conosco</h3>
+                <h3 class="title">Fale conosco</h3>
                 <label for="name" class="footer__form__label">Nome</label>
-                <input type="text" class="footer__form__input footer__form__input--name" id="name">
+                <input type="text" class="footer__form__input footer__form__input--name" id="name" name="name">
                 <label for="msg" class="hidden">Escreva sua mensagem</label>
                 <textarea class="footer__form__input footer__form__input--msg" id="msg" placeholder="Escreva sua mensagem"></textarea>
-                <button type="submit" class="footer__form__btn">Enviar mensagem</button>
+                <button type="submit" class="btn btn--dark btn--footer">Enviar mensagem</button>
             </form>
         </div>
         <div class="footer__info">

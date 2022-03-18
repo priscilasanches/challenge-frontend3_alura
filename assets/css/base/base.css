@@ -1,0 +1,41 @@
+@import url("_reset.css");
+@import url("_variables.css");
+@import url("../components/_button.css");
+@import url("../components/_header.css");
+@import url("../components/_footer.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-white);
+    color: #464646;
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+input {
+    border: none;
+    border-radius: 4px;    
+    box-shadow: 0px 1px var(--color-dark-grey);
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.hidden {
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    position: absolute;
+    width: 1px;
+}
+
+.logo {
+    height: 3.125rem;
+    width: 11rem;
+}
+
+.title {
+    font-weight: 700;
+}
