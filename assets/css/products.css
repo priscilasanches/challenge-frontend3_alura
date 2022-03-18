@@ -19,7 +19,7 @@
 }
 
 .products__link::after {
-    content: url('../../img/seta.svg');
+    content: url('../img/seta.svg');
     margin-left: 0.75rem;
 }
 
