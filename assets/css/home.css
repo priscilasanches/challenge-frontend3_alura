@@ -1,0 +1,14 @@
+@import url(components/banner.css);
+@import url(components/productsList.css);
+
+
+.products__link {
+    color: var(--color-100);
+    font-weight: 700;
+}
+
+.products__link::after {
+    content: url('../img/seta.svg');
+    margin-left: 0.75rem;
+}
+

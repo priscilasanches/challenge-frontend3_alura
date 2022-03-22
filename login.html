@@ -5,13 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>AluraGeek</title>
+    <title>AluraGeek - Login</title>
 
     <link rel="icon" type="image/png" href="assets/img/controle.png">
     <link rel="stylesheet" href="assets/css/base/base.css">
-    <link rel="stylesheet" href="assets/css/components/header.css">
-    <link rel="stylesheet" href="assets/css/components/footer.css">
-    <link rel="stylesheet" href="assets/css/components/banner.css">
     <link rel="stylesheet" href="assets/css/login.css">
         
 </head>
@@ -29,9 +26,9 @@
         <form class="login__area">
             <h2 class="login__title title">Iniciar sessão</h2>
             <label for="email" class="hidden">E-mail</label>
-            <input type="email" class="login__input" id="email" name="email" placeholder="Escreva seu e-mail">
+            <input type="email" class="login__input" id="email" name="email" placeholder="Escreva seu e-mail" required>
             <label for="password" class="hidden">Senha</label>
-            <input type="password" class="login__input " id="password" name="email" placeholder="Escreva sua senha">
+            <input type="password" class="login__input " id="password" name="password" placeholder="Escreva sua senha" minlength="6" required>
             <button type="submit" class="btn btn--dark btn--login">Entrar</button>
         </form>
     </main>
@@ -51,9 +48,9 @@
             <form class="footer__form">
                 <h3 class="title">Fale conosco</h3>
                 <label for="name" class="footer__form__label">Nome</label>
-                <input type="text" class="footer__form__input footer__form__input--name" id="name" name="name">
+                <input type="text" class="footer__form__input footer__form__input--name" id="name" name="name" required>
                 <label for="msg" class="hidden">Escreva sua mensagem</label>
-                <textarea class="footer__form__input footer__form__input--msg" id="msg" placeholder="Escreva sua mensagem"></textarea>
+                <textarea class="footer__form__input footer__form__input--msg" id="msg" placeholder="Escreva sua mensagem" required></textarea>
                 <button type="submit" class="btn btn--dark btn--footer">Enviar mensagem</button>
             </form>
         </div>
