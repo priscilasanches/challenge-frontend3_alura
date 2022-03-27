@@ -32,7 +32,8 @@
 
 .btn--header {
     margin-left: auto;
-    width: 8.125rem;
+    min-width: 8.125rem;
+    width:max-content;
 }
 
 /*Tablet*/
@@ -42,12 +43,11 @@
         padding: 0 1rem;
     }
     .header .logo {
-        height: 2.5rem;
+        height: 2rem;
         width: 7rem;
     }
     .btn--header {
         font-size: 0.875rem;
-        width: 10.375rem;
     }
 }
 
@@ -55,7 +55,7 @@
 @media screen and (max-width: 600px) {
     .header{
         justify-content: space-evenly;
-        gap: 0;
+        gap: 0.5rem;
     }
     .header__search {
         height: auto;
@@ -73,6 +73,5 @@
     }    
     .btn--header {
         margin-left: 0;
-        width: 8.312rem;
     }
 }

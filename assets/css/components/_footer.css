@@ -1,3 +1,5 @@
+@import url(../components/input.css);
+
 .footer__interactive {
     background-color: var(--color-10);
     display: grid;
@@ -13,33 +15,11 @@
 
 .footer__form {
     display: flex;
+    gap: 0.5rem;
     flex-direction: column;
 }
 
-.footer__form__label {
-    color: var(--color-dark-grey);
-    font-size: 0.75rem;
-    left: 1rem;
-    position: relative;
-    top: 1.8rem;
-}
-
-.footer__form__input {
-    margin: 0.5rem 0; 
-}
-
-.footer__form__input--name {
-    height: 3.44rem;
-    padding: 1.3rem 1rem 0.5rem;
-}
-
-.footer__form__input--msg {
-    height: 5.125rem;
-    padding: 0.5rem 1rem;
-}
-
-.btn {
-    
+.btn--footer {
     width: 10.33rem;
 }
 

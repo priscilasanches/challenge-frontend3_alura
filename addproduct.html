@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AluraGeek - Adicionar produtos</title>
+    
+    <link rel="icon" type="image/png" href="assets/img/controle.png">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/addproduct.css">
+    
+</head>
+<body>
+    <header class="header">
+        <h1><a href="index.html"><img src="assets/img/logo.png" alt="AluraGeek" class="logo"></a></h1>
+        <div class="header__search">
+            <label for="search" class="hidden">Campo de busca</label>
+            <input type="text" class="header__search__input" id="search" name="search" placeholder="O que deseja encontrar?">
+            <button class="header__search__submit"><img src="assets/img/search.svg" alt="Botão de busca"></button>
+        </div>
+        <a href="login.html" class="btn btn--light btn--header">Menu administrador</a>
+    </header>
+    <main>
+        <form class="form">
+            <h2 class="form__title title">Adicionar novo produto</h2>
+            <fieldset class="form__add-file">
+                <div class="form__drop-file">
+                    <p class="form__drop-file__txt">Arraste para adicionar uma imagem para o produto</p>
+                </div>
+                <p>Ou</p>
+                <label for="file" class="btn btn--light btn--file" data-device>Procure no seu dispositivo</label>
+                <input type="file" id="file" name="file" class="form__find-file hidden" required>
+            </fieldset>
+            <label for="name" class="form__label">Nome do produto</label>
+            <input type="text" class="form__input" id="name" name="name" required>
+            <label for="price" class="form__label">Preço do produto</label>
+            <input type="text" class="form__input" id="price" name="price" value="R$ " required>
+            <label for="description" class="form__label">Descrição do produto</label>
+            <textarea class="form__textarea form__textarea-" id="description" name="description"></textarea>
+            <button type="submit" class="btn btn--dark">Adicionar produto</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__interactive">
+            <img src="assets/img/logo.png" alt="Logotipo da AluraGeek" class="logo">
+            <nav class="footer__nav">
+                <ul>
+                    <li class="footer__links"><a href="#">Quem somos nós</a></li>
+                    <li class="footer__links"><a href="#">Política de privacidade</a></li>
+                    <li class="footer__links"><a href="#">Programa Fidelidade</a></li>
+                    <li class="footer__links"><a href="#">Nossas lojas</a></li>
+                    <li class="footer__links"><a href="#">Quero ser franqueado</a></li>
+                    <li class="footer__links"><a href="#">Anuncie aqui</a></li>
+                </ul>
+            </nav>
+            <form class="footer__form">
+                <h3 class="title">Fale conosco</h3>
+                <label for="name" class="form__label">Nome</label>
+                <input type="text" class="form__input" id="name" name="name" required>
+                <label for="msg" class="form__label">Escreva sua mensagem</label>
+                <textarea class="form__textarea" id="msg" required></textarea>
+                <button type="submit" class="btn btn--dark btn--footer">Enviar mensagem</button>
+            </form>
+        </div>
+        <div class="footer__info">
+            <p>Desenvolvido por Priscila Sanches</p>
+            <p>2022</p>
+        </div>
+    </footer>
+    <script src="./assets/js/mediaQuery.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.form__label {
+    color: var(--color-dark-grey);
+    font-size: 0.75rem;
+    height: 0;
+    left: 1rem;
+    position: relative;
+    top: 1rem;
+}
+
+.form__input {
+    font-family: var(--font-family);
+    height: 3.44rem;
+    padding: 1.3rem 1rem 0.5rem;
+}
+
+.form__textarea {
+    height: 5.125rem;
+    padding: 1.3rem 1rem 0.5rem;
+}
