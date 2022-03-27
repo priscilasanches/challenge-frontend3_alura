@@ -1,4 +1,4 @@
-<div align="center">
+<div >
   
   <img src="assets/img/logo.png" width="200">
   <h3 align="center">AluraGeek - e commerce</h3>
