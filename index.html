@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>AluraGeek</title>
-
+    
     <link rel="icon" type="image/png" href="assets/img/controle.png">
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/home.css">
-        
+    
 </head>
 <body>
     <header class="header">
@@ -26,7 +26,7 @@
         <section class="banner">
             <h2 class="banner__title title">Dezembro Promocional</h2>
             <p class="banner__description">Produtos Selecionados com 33% de desconto</p>
-            <button class="btn btn--dark">Ver consoles</button>
+            <a href="#consoles" class="btn btn--dark">Ver consoles</a>
         </section>
         <section class="products">
             <section class="products__theme">
@@ -75,7 +75,7 @@
             </section>
             <section class="products__theme">
                 <div class="products__theme__info">
-                    <h3 class="products__title title">Consoles</h3>
+                    <h3 class="products__title title" id="consoles">Consoles</h3>
                     <a href="#" class="products__link">Ver tudo</a>
                 </div>
                 <ul class="products__list">
@@ -166,6 +166,7 @@
     <footer class="footer">
         <div class="footer__interactive">
             <img src="assets/img/logo.png" alt="Logotipo da AluraGeek" class="logo">
+            
             <nav class="footer__nav">
                 <ul>
                     <li class="footer__links"><a href="#">Quem somos nós</a></li>
@@ -176,12 +177,18 @@
                     <li class="footer__links"><a href="#">Anuncie aqui</a></li>
                 </ul>
             </nav>
+            
             <form class="footer__form">
                 <h3 class="title">Fale conosco</h3>
+                
                 <label for="name" class="form__label">Nome</label>
-                <input type="text" class="form__input" id="name" name="name" required>
+                <input type="text" class="form__input" id="name" name="name" data-input="name" maxlength="40" required>
+                <span class="error__msg" data-error="name"></span>
+                
                 <label for="msg" class="form__label">Escreva sua mensagem</label>
-                <textarea class="form__textarea" id="msg" required></textarea>
+                <textarea class="form__textarea" id="msg" data-input="msg" maxlength="120" required></textarea>
+                <span class="error__msg" data-error="msg"></span>
+                
                 <button type="submit" class="btn btn--dark btn--footer">Enviar mensagem</button>
             </form>
         </div>
@@ -191,5 +198,6 @@
         </div>
     </footer>
     
+    <script src="./js/app.js" type="module"></script>
 </body>
 </html>

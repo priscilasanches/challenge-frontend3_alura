@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>AluraGeek - Produto</title>
 
     <link rel="icon" type="image/png" href="assets/img/controle.png">
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/product.css">
-        
+
 </head>
+
 <body>
     <header class="header">
         <h1><a href="index.html"><img src="assets/img/logo.png" alt="AluraGeek" class="logo"></a></h1>
         <div class="header__search">
             <label for="search" class="hidden">Campo de busca</label>
-            <input type="text" class="header__search__input" id="search" name="search" placeholder="O que deseja encontrar?">
+            <input type="text" class="header__search__input" id="search" name="search"
+                placeholder="O que deseja encontrar?">
             <button class="header__search__submit"><img src="assets/img/search.svg" alt="Botão de busca"></button>
         </div>
         <a href="login.html" class="btn btn--light btn--header">Login</a>
@@ -30,7 +33,11 @@
             <div class="selected-product__box-infos">
                 <h1 class="selected-product__title">Caneca Star Wars</h1>
                 <p class="selected-product__price">R$ 60,00</p>
-                <p class="selected-product__description">Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam</p>
+                <p class="selected-product__description">Voluptas voluptatum quibusdam similique, class debitis alias
+                    maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse
+                    distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae?
+                    Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi
+                    porta anim magnam</p>
             </div>
         </section>
         <section class="products">
@@ -82,6 +89,7 @@
     <footer class="footer">
         <div class="footer__interactive">
             <img src="assets/img/logo.png" alt="Logotipo da AluraGeek" class="logo">
+
             <nav class="footer__nav">
                 <ul>
                     <li class="footer__links"><a href="#">Quem somos nós</a></li>
@@ -92,12 +100,18 @@
                     <li class="footer__links"><a href="#">Anuncie aqui</a></li>
                 </ul>
             </nav>
+
             <form class="footer__form">
                 <h3 class="title">Fale conosco</h3>
+
                 <label for="name" class="form__label">Nome</label>
-                <input type="text" class="form__input" id="name" name="name" required>
+                <input type="text" class="form__input" id="name" name="name" data-input="name" maxlength="40" required>
+                <span class="error__msg" data-error="name"></span>
+
                 <label for="msg" class="form__label">Escreva sua mensagem</label>
-                <textarea class="form__textarea" id="msg" required></textarea>
+                <textarea class="form__textarea" id="msg" data-input="msg" maxlength="120" required></textarea>
+                <span class="error__msg" data-error="msg"></span>
+
                 <button type="submit" class="btn btn--dark btn--footer">Enviar mensagem</button>
             </form>
         </div>
@@ -106,6 +120,8 @@
             <p>2022</p>
         </div>
     </footer>
-    
+
+    <script src="./js/app.js" type="module"></script>
 </body>
+
 </html>

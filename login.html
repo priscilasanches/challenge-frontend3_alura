@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>AluraGeek - Login</title>
 
     <link rel="icon" type="image/png" href="assets/img/controle.png">
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/login.css">
-        
+
 </head>
+
 <body>
     <header class="header">
         <h1><a href="index.html"><img src="assets/img/logo.png" alt="AluraGeek" class="logo"></a></h1>
         <div class="header__search">
             <label for="search" class="hidden">Campo de busca</label>
-            <input type="text" class="header__search__input" id="search" name="search" placeholder="O que deseja encontrar?">
+            <input type="text" class="header__search__input" id="search" name="search"
+                placeholder="O que deseja encontrar?">
             <button class="header__search__submit"><img src="assets/img/search.svg" alt="Botão de busca"></button>
-        </div>        
+        </div>
     </header>
+
     <main class="login">
         <form class="login__area">
             <h2 class="login__title title">Iniciar sessão</h2>
+
             <label for="email" class="hidden">E-mail</label>
-            <input type="email" class="login__input" id="email" name="email" placeholder="Escreva seu e-mail" required>
+            <input type="email" class="login__input" id="email" name="email" placeholder="Escreva seu e-mail" data-input="email" pattern=".*@[A-Z a-z]*(\.[A-Z a-z]*){1,2}" required>
+            <span class="error__msg" data-error="email"></span>
+
             <label for="password" class="hidden">Senha</label>
-            <input type="password" class="login__input " id="password" name="password" placeholder="Escreva sua senha" minlength="6" required>
-            <a href="allproducts.html" type="submit" class="btn btn--dark btn--login">Entrar</a>
+            <input type="password" class="login__input " id="password" name="password" placeholder="Escreva sua senha" data-input="password" required>
+            <span class="error__msg" data-error="password"></span>
+
+            <button href="allproducts.html" type="submit" class="btn btn--dark btn--login">Entrar</button>
         </form>
     </main>
+
     <footer class="footer">
         <div class="footer__interactive">
             <img src="assets/img/logo.png" alt="Logotipo da AluraGeek" class="logo">
+
             <nav class="footer__nav">
                 <ul>
                     <li class="footer__links"><a href="#">Quem somos nós</a></li>
@@ -44,20 +55,29 @@
                     <li class="footer__links"><a href="#">Anuncie aqui</a></li>
                 </ul>
             </nav>
+
             <form class="footer__form">
                 <h3 class="title">Fale conosco</h3>
+
                 <label for="name" class="form__label">Nome</label>
-                <input type="text" class="form__input" id="name" name="name" required>
+                <input type="text" class="form__input" id="name" name="name" data-input="name" maxlength="40" required>
+                <span class="error__msg" data-error="name"></span>
+
                 <label for="msg" class="form__label">Escreva sua mensagem</label>
-                <textarea class="form__textarea" id="msg" required></textarea>
+                <textarea class="form__textarea" id="msg" data-input="msg" maxlength="120" required></textarea>
+                <span class="error__msg" data-error="msg"></span>
+
                 <button type="submit" class="btn btn--dark btn--footer">Enviar mensagem</button>
             </form>
         </div>
+
         <div class="footer__info">
             <p>Desenvolvido por Priscila Sanches</p>
             <p>2022</p>
         </div>
     </footer>
-    
+
+    <script src="./js/app.js" type="module"></script>
 </body>
+
 </html>
