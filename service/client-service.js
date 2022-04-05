@@ -8,7 +8,7 @@ const listProducts = () => {
     })
 }
 
-const showProduct = (id) => {
+const dataProduct = (id) => {
     return fetch(`http://localhost:3000/products/${id}`)
     .then (response => {
         if(response.ok){
@@ -20,5 +20,5 @@ const showProduct = (id) => {
 
 export const clientService = {
     listProducts,
-    showProduct
+    dataProduct
 }

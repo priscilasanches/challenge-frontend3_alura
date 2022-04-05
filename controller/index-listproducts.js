@@ -3,10 +3,10 @@ import { clientService } from "../service/client-service.js"
 const category = {
     "Star Wars": document.querySelector('[data-list="starwars"]'),
     "Consoles": document.querySelector('[data-list="consoles"]'),
-    "Diversos": document.querySelector('[data-list="diversos"]')
+    "Diversos": document.querySelector('[data-list="diversos"]'),
 }
 
-const createProduct = (id, categoria, imagem, nome, preco) => {
+export const createProduct = (id, imagem, nome, preco) => {
     const product = document.createElement('li')
     product.classList.add("product")
     const content = `
@@ -15,8 +15,8 @@ const createProduct = (id, categoria, imagem, nome, preco) => {
         <p class="product__price">${preco}</p>
         <a href="product.html?id=${id}" class="product__link">Ver produto</a>`
     product.innerHTML = content
-    
-    category[categoria].appendChild(product)
+     
+    return product    
 }
 
 
@@ -43,7 +43,8 @@ const render = async() => {
 
 const countElements = (array) => {
     for (let i=0; i<6; i++) {
-        createProduct(array[i].id, array[i].categoria, array[i].imagem, array[i].nome, array[i].preco)
+        let product = createProduct(array[i].id, array[i].imagem, array[i].nome, array[i].preco)
+        category[array[i].categoria].appendChild(product)
     }
 }
 

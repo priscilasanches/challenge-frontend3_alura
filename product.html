@@ -27,62 +27,16 @@
     </header>
 
     <main>
-        <section class="selected-product">
-            <div class="selected-product__box-img">
-                <img src="./assets/img/sw1.png" alt="caneca Star Wars" class="selected-product__img">
-            </div>
-            <div class="selected-product__box-infos">
-                <h1 class="selected-product__title">Caneca Star Wars</h1>
-                <p class="selected-product__price">R$ 60,00</p>
-                <p class="selected-product__description">Voluptas voluptatum quibusdam similique, class debitis alias
-                    maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse
-                    distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae?
-                    Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi
-                    porta anim magnam</p>
-            </div>
+        <section class="selected-product" data-product>
+            <!-- API -->
         </section>
         <section class="products">
             <section class="products__theme">
                 <div class="products__theme__info">
                     <h3 class="products__title title">Produtos similares</h3>
                 </div>
-                <ul class="products__list">
-                    <li class="product">
-                        <img src="assets/img/sw1.png" alt="foto do produto" class="product__img">
-                        <h4 class="product__title">Produto XYZ</h4>
-                        <p class="product__price">R$ 60,00</p>
-                        <a href="product.html" class="product__link">Ver produto</a>
-                    </li>
-                    <li class="product">
-                        <img src="assets/img/sw2.png" alt="foto do produto" class="product__img">
-                        <h4 class="product__title">Produto XYZ</h4>
-                        <p class="product__price">R$ 60,00</p>
-                        <a href="product.html" class="product__link">Ver produto</a>
-                    </li>
-                    <li class="product">
-                        <img src="assets/img/sw3.png" alt="foto do produto" class="product__img">
-                        <h4 class="product__title">Produto XYZ</h4>
-                        <p class="product__price">R$ 60,00</p>
-                        <a href="product.html" class="product__link">Ver produto</a>
-                    </li>
-                    <li class="product">
-                        <img src="assets/img/sw4.png" alt="foto do produto" class="product__img">
-                        <h4 class="product__title">Produto XYZ</h4>
-                        <p class="product__price">R$ 60,00</p>
-                        <a href="product.html" class="product__link">Ver produto</a>
-                    </li>
-                    <li class="product">
-                        <img src="assets/img/sw5.png" alt="foto do produto" class="product__img">
-                        <h4 class="product__title">Produto XYZ</h4>
-                        <p class="product__price">R$ 60,00</p>
-                        <a href="product.html" class="product__link">Ver produto</a>
-                    </li>
-                    <li class="product">
-                        <img src="assets/img/sw6.png" alt="foto do produto" class="product__img">
-                        <h4 class="product__title">Produto XYZ</h4>
-                        <p class="product__price">R$ 60,00</p>
-                        <a href="product.html" class="product__link">Ver produto</a>
-                    </li>
+                <ul class="products__list" data-similar>
+                    <!-- API -->
                 </ul>
             </section>
         </section>
@@ -123,7 +77,7 @@
     </footer>
 
     <script src="./js/app.js" type="module"></script>
-    <script src="./controller/showProduct.js" type="module"></script>
+    <script src="./controller/product.js" type="module"></script>
 </body>
 
 </html>
