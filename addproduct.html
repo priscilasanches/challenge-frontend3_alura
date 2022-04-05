@@ -30,7 +30,7 @@
             <h2 class="form__title title">Adicionar novo produto</h2>
             
             <fieldset class="form__add-file">
-                <div class="form__drop-file">
+                <div class="form__drop-file" data-dropzone>
                     <p class="form__drop-file__txt">Arraste para adicionar uma imagem para o produto</p>
                 </div>
                 <p>Ou</p>
@@ -50,7 +50,7 @@
             <textarea class="form__textarea form__textarea-" id="description" name="description" data-input="description" required maxlength="150"></textarea>
             <span class="error__msg" data-error="description"></span>
             
-            <button type="submit" class="btn btn--dark">Adicionar produto</button>
+            <button type="submit" class="btn btn--dark" data-submit>Adicionar produto</button>
         </form>
     </main>
     <footer class="footer">
@@ -79,7 +79,7 @@
                 <textarea class="form__textarea" id="msg" data-input="msg" maxlength="120" required></textarea>
                 <span class="error__msg" data-error="msg"></span>
                 
-                <button type="submit" class="btn btn--dark btn--footer">Enviar mensagem</button>
+                <button type="submit" class="btn btn--dark btn--footer" data-submit>Enviar mensagem</button>
             </form>
         </div>
         <div class="footer__info">
@@ -91,6 +91,7 @@
     <script src="js/mediaQuery.js"></script>
     <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
     <script src="./js/app.js" type="module"></script>
+    <script src="./js/drop.js"></script>
     
     
 </body>

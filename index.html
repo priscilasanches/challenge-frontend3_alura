@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/home.css">
     
 </head>
+
 <body>
     <header class="header">
         <h1><a href="index.html"><img src="assets/img/logo.png" alt="AluraGeek" class="logo"></a></h1>
@@ -22,20 +22,22 @@
         </div>
         <a href="login.html" class="btn btn--light btn--header">Login</a>
     </header>
+
     <main>
         <section class="banner">
             <h2 class="banner__title title">Dezembro Promocional</h2>
             <p class="banner__description">Produtos Selecionados com 33% de desconto</p>
             <a href="#consoles" class="btn btn--dark">Ver consoles</a>
         </section>
+
         <section class="products">
             <section class="products__theme">
                 <div class="products__theme__info">
                     <h3 class="products__title title">Star Wars</h3>
                     <a href="#" class="products__link">Ver tudo</a>
                 </div>
-                <ul class="products__list">
-                    <li class="product">
+                <ul class="products__list" data-list="starwars">
+                    <!-- <li class="product">
                         <img src="assets/img/sw1.png" alt="foto do produto" class="product__img">
                         <h4 class="product__title">Produto XYZ</h4>
                         <p class="product__price">R$ 60,00</p>
@@ -70,7 +72,7 @@
                         <h4 class="product__title">Produto XYZ</h4>
                         <p class="product__price">R$ 60,00</p>
                         <a href="product.html" class="product__link">Ver produto</a>
-                    </li>
+                    </li> -->
                 </ul>
             </section>
             <section class="products__theme">
@@ -78,8 +80,8 @@
                     <h3 class="products__title title" id="consoles">Consoles</h3>
                     <a href="#" class="products__link">Ver tudo</a>
                 </div>
-                <ul class="products__list">
-                    <li class="product">
+                <ul class="products__list" data-list="consoles">
+                    <!-- <li class="product">
                         <img src="assets/img/csl1.png" alt="foto do produto" class="product__img">
                         <h4 class="product__title">Controle XYZ</h4>
                         <p class="product__price">R$ 60,00</p>
@@ -114,7 +116,7 @@
                         <h4 class="product__title">Game Boy Color</h4>
                         <p class="product__price">R$ 60,00</p>
                         <a href="product.html" class="product__link">Ver produto</a>
-                    </li>
+                    </li> -->
                 </ul>
             </section>
             <section class="products__theme">
@@ -122,8 +124,8 @@
                     <h3 class="products__title title">Diversos</h3>
                     <a href="#" class="products__link">Ver tudo</a>
                 </div>
-                <ul class="products__list">
-                    <li class="product">
+                <ul class="products__list" data-list="diversos">
+                    <!-- <li class="product">
                         <img src="assets/img/dv1.png" alt="foto do produto" class="product__img">
                         <h4 class="product__title">Camisa Atari</h4>
                         <p class="product__price">R$ 60,00</p>
@@ -158,11 +160,12 @@
                         <h4 class="product__title">Pikachu</h4>
                         <p class="product__price">R$ 60,00</p>
                         <a href="product.html" class="product__link">Ver produto</a>
-                    </li>
+                    </li> -->
                 </ul>
             </section>
         </section>
     </main>
+
     <footer class="footer">
         <div class="footer__interactive">
             <img src="assets/img/logo.png" alt="Logotipo da AluraGeek" class="logo">
@@ -189,7 +192,7 @@
                 <textarea class="form__textarea" id="msg" data-input="msg" maxlength="120" required></textarea>
                 <span class="error__msg" data-error="msg"></span>
                 
-                <button type="submit" class="btn btn--dark btn--footer">Enviar mensagem</button>
+                <button type="submit" class="btn btn--dark btn--footer" data-submit>Enviar mensagem</button>
             </form>
         </div>
         <div class="footer__info">
@@ -199,5 +202,6 @@
     </footer>
     
     <script src="./js/app.js" type="module"></script>
+    <script src="./controller/listProducts.js" type="module"></script>
 </body>
 </html>

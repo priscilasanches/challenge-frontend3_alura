@@ -20,7 +20,7 @@ const errorsMessages = {
         valueMissing:'Por favor, descreva o produto.'
     },
     email: {
-        valueMissing:'Por favor, descreva o produto.',
+        valueMissing:'Por favor, informe o seu e-mail',
         patternMismatch: 'O e-mail deve estar no formato "fulano@empresa.com".'
     },
     name: {

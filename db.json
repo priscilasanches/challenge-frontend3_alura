@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "categoria": "Star Wars",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem":"assets/img/sw1.png"      
+    },
+    {
+      "id": 2,
+      "categoria": "Star Wars",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/sw2.png"
+    },
+    {
+      "id": 3,
+      "categoria": "Star Wars",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/sw3.png"
+    },
+    {
+      "id": 4,
+      "categoria": "Star Wars",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/sw4.png"
+    },
+    {
+      "id": 5,
+      "categoria": "Star Wars",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/sw5.png"
+    },
+    {
+      "id": 6,
+      "categoria": "Star Wars",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/sw6.png"
+    },
+    {
+      "id": 7,
+      "categoria": "Consoles",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem":"assets/img/csl1.png"      
+    },
+    {
+      "id": 8,
+      "categoria": "Consoles",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/csl2.png"
+    },
+    {
+      "id": 9,
+      "categoria": "Consoles",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/csl3.png"
+    },
+    {
+      "id": 10,
+      "categoria": "Consoles",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/csl4.png"
+    },
+    {
+      "id": 11,
+      "categoria": "Consoles",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/csl5.png"
+    },
+    {
+      "id": 12,
+      "categoria": "Consoles",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/csl6.png"
+    },
+    {
+      "id": 13,
+      "categoria": "Diversos",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem":"assets/img/dv1.png"      
+    },
+    {
+      "id": 14,
+      "categoria": "Diversos",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/dv2.png"
+    },
+    {
+      "id": 15,
+      "categoria": "Diversos",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/dv3.png"
+    },
+    {
+      "id": 16,
+      "categoria": "Diversos",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/dv4.png"
+    },
+    {
+      "id": 17,
+      "categoria": "Diversos",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/dv5.png"
+    },
+    {
+      "id": 18,
+      "categoria": "Diversos",
+      "nome": "Produto XYZ",
+      "preco": "R$ 60,00",
+      "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
+      "imagem": "assets/img/dv6.png"
+    }
+  ]
+}

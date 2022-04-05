@@ -27,6 +27,6 @@ export function validate (input) {
     }
 
     input.classList.remove('error')
-    areaError.innerHTML = ''       
+    areaError.innerHTML = ''        
 }
 

@@ -25,6 +25,7 @@
         </div>
         <a href="login.html" class="btn btn--light btn--header">Login</a>
     </header>
+
     <main>
         <section class="selected-product">
             <div class="selected-product__box-img">
@@ -112,7 +113,7 @@
                 <textarea class="form__textarea" id="msg" data-input="msg" maxlength="120" required></textarea>
                 <span class="error__msg" data-error="msg"></span>
 
-                <button type="submit" class="btn btn--dark btn--footer">Enviar mensagem</button>
+                <button type="submit" class="btn btn--dark btn--footer" data-submit>Enviar mensagem</button>
             </form>
         </div>
         <div class="footer__info">
@@ -122,6 +123,7 @@
     </footer>
 
     <script src="./js/app.js" type="module"></script>
+    <script src="./controller/showProduct.js" type="module"></script>
 </body>
 
 </html>
