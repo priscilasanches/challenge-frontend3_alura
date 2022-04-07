@@ -23,5 +23,11 @@
 }
 
 .error__msg {
-    color: darkred;
+    color: rgb(198, 41, 41);
+    line-height: 1.5rem;
+}
+
+.success_msg {
+    color: rgb(27, 150, 27);
+    font-weight: 700;
 }

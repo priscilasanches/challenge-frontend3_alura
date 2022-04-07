@@ -30,14 +30,15 @@
             <h2 class="login__title title">Iniciar sessão</h2>
 
             <label for="email" class="hidden">E-mail</label>
-            <input type="email" autocomplete="username" class="login__input" id="email" name="email" placeholder="Escreva seu e-mail" data-input="email" pattern=".*@[A-Z a-z]*(\.[A-Z a-z]*){1,2}" required>
+            <input type="email" autocomplete="email" class="login__input" id="email" name="email" placeholder="Escreva seu e-mail" data-input="email" pattern=".*@[A-Z a-z]*(\.[A-Z a-z]*){1,2}" required>
             <span class="error__msg" data-error="email"></span>
 
             <label for="password" class="hidden">Senha</label>
             <input type="password" autocomplete="current-password" class="login__input " id="password" name="password" placeholder="Escreva sua senha" data-input="password" required>
             <span class="error__msg" data-error="password"></span>
 
-            <button href="allproducts.html" type="submit" class="btn btn--dark btn--login" data-submit>Entrar</button>
+            <span class="error__msg" data-error="login"></span>
+            <button href="allproducts.html" type="submit" class="btn btn--dark btn--login" data-submit="login">Entrar</button>
         </form>
     </main>
 
@@ -56,7 +57,7 @@
                 </ul>
             </nav>
 
-            <form class="footer__form">
+            <form class="footer__form" autocomplete="off">
                 <h3 class="title">Fale conosco</h3>
 
                 <label for="name" class="form__label">Nome</label>
@@ -66,8 +67,9 @@
                 <label for="msg" class="form__label">Escreva sua mensagem</label>
                 <textarea class="form__textarea" id="msg" data-input="msg" maxlength="120" required></textarea>
                 <span class="error__msg" data-error="msg"></span>
-
-                <button type="submit" class="btn btn--dark btn--footer" data-submit>Enviar mensagem</button>
+                
+                <span class="success_msg" data-success="footer"></span>
+                <button type="submit" class="btn btn--dark btn--footer" data-submit="footer">Enviar mensagem</button>
             </form>
         </div>
 
@@ -77,7 +79,8 @@
         </div>
     </footer>
 
-    <script src="./js/app.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
+    <script src="./js/screens/login.js" type="module"></script>
 </body>
 
 </html>

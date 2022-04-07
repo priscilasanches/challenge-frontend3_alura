@@ -41,6 +41,7 @@
             </section>
         </section>
     </main>
+
     <footer class="footer">
         <div class="footer__interactive">
             <img src="assets/img/logo.png" alt="Logotipo da AluraGeek" class="logo">
@@ -56,7 +57,7 @@
                 </ul>
             </nav>
 
-            <form class="footer__form">
+            <form class="footer__form" autocomplete="off">
                 <h3 class="title">Fale conosco</h3>
 
                 <label for="name" class="form__label">Nome</label>
@@ -66,18 +67,20 @@
                 <label for="msg" class="form__label">Escreva sua mensagem</label>
                 <textarea class="form__textarea" id="msg" data-input="msg" maxlength="120" required></textarea>
                 <span class="error__msg" data-error="msg"></span>
-
-                <button type="submit" class="btn btn--dark btn--footer" data-submit>Enviar mensagem</button>
+                
+                <span class="success_msg" data-success="footer"></span>
+                <button type="submit" class="btn btn--dark btn--footer" data-submit="footer">Enviar mensagem</button>
             </form>
         </div>
+
         <div class="footer__info">
             <p>Desenvolvido por Priscila Sanches</p>
             <p>2022</p>
         </div>
     </footer>
 
-    <script src="./js/app.js" type="module"></script>
-    <script src="./controller/product.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
+    <script src="./js/screens/product.js" type="module"></script>
 </body>
 
 </html>

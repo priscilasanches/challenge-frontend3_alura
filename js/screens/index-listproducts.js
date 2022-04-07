@@ -1,4 +1,4 @@
-import { clientService } from "../service/client-service.js"
+import { clientService } from "../../service/client-service.js"
 
 const category = {
     "Star Wars": document.querySelector('[data-list="starwars"]'),

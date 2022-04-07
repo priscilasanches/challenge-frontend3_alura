@@ -1,3 +1,4 @@
+import { sendForm } from './validation/Send.js'
 import {validate} from './validation/Validate.js'
 
 //Validação inputs
@@ -18,11 +19,6 @@ inputs.forEach(input => {
     input.addEventListener('blur', (event) => {
         validate(event.target)
     })
-
-    const button = input.parentElement.querySelector('[data-submit]')
-    button.addEventListener('click', () => {
-        validate(input)
-    })
 })
 //tirando o foco inicial do campo de preço (gerado pela máscara)
 const priceInput = document.querySelector('[data-input="price"]')
@@ -31,3 +27,17 @@ if (priceInput) {
     priceInput.classList.remove('error')
     document.querySelector('[data-error="price"]').innerHTML = ''
 }  
+
+//validando footer
+const button = document.querySelector('[data-submit="footer"]')
+button.addEventListener('click', (event) => {
+    event.preventDefault()
+    const inputs = {
+        "name": document.querySelector('[data-input="name"]'),
+        "msg": document.querySelector('[data-input="msg"]')
+    }
+
+    if(!validate(inputs["name"])&&!validate(inputs["msg"])){
+        sendForm(button)
+    }
+})

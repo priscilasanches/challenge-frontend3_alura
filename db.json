@@ -144,5 +144,15 @@
       "descricao": "Descrevendo o produto indescritível para melhor descrever o que não se vê do produto que vamos descrever",
       "imagem": "assets/img/dv6.png"
     }
+  ],
+  "users":[
+    {
+      "email": "admin1@alurageek.com",
+      "senha": "1234"
+    },
+    {
+      "email": "admin2@alurageek.com",
+      "senha": "4567"
+    }
   ]
 }

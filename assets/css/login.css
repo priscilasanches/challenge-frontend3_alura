@@ -24,6 +24,11 @@
     width: 100%; 
 }
 
+.login__input:active {
+    background-color: var(--color-white);
+}
+
+
 .btn--login {
     margin-top: 1rem;
     width: 100%;

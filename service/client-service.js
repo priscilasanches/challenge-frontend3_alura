@@ -18,7 +18,18 @@ const dataProduct = (id) => {
     })
 }
 
+const users = () => {
+    return (fetch('http://localhost:3000/users'))
+    .then (response => {
+        if(response.ok) {
+            return response.json()
+        }
+        throw new Error ('Não foi posível acessar os usuários.')
+    })
+}
+
 export const clientService = {
+    dataProduct,
     listProducts,
-    dataProduct
+    users
 }

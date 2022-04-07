@@ -1,8 +1,10 @@
 import {msgError} from './Errors.js'
 
+
 export function validate (input) {
 
     const typeInput = input.dataset.input
+    let error = false
 
     //validações conforme tipo de input
     if (typeInput === 'price') {
@@ -23,10 +25,13 @@ export function validate (input) {
         message = msgError(input, typeInput) //retorna uma msg de erro
         input.classList.add('error')
         areaError.innerHTML = message 
-        return
+        error = true;
+        return error
     }
 
     input.classList.remove('error')
-    areaError.innerHTML = ''        
+    areaError.innerHTML = '' 
+    error = false
+    return error 
 }
 
